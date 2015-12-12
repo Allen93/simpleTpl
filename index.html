@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script src="src/myTpl.js"></script></head>
+<body>
+
+<script id="test_tpl" type="text/html">
+{{ if (person){ }}
+    {{ for (var key in person) { }}
+        <div style="margin-left:15px;">{{# key }}. {{# person[key] }}</div>
+    {{ } }}
+{{ } }}
+</script>
+
+<div id="content_tpl"></div>
+
+<script src="test/test.js"></script>
+
+</body>
+</html>
